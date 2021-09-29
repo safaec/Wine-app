@@ -7,17 +7,17 @@
       <h1> WINE QUALITY </h1><br>
       
       <form method="POST", action="{{url_for('home')}}">
-         <b> fixed acidity:       <input type="number", name='1', > <br><br>
-          volatile acidity :      <input type="number", name='2', > <br><br>
-          citric acid :           <input type="number", name='3', > <br><br>
-          residual sugar :        <input type="number", name='4', > <br><br>
-          chlorides :             <input type="number", name='5', > <br><br>
-          free sulfur dioxide :   <input type="number", name='6', > <br><br>
-          total sulfur dioxide :  <input type="number", name='7', > <br><br>
-          density :               <input type="number", name='8', > <br><br>
-          pH :                    <input type="number", name='9', > <br><br>
-          sulphates :             <input type="number", name='10', > <br><br>
-          alcohol :               <input type="number", name='11', > <br><br><br></b>
+         <b> fixed acidity:       <input type="number" step="0.0001", name='1', > <br><br>
+          volatile acidity :      <input type="number" step="0.0001", name='2', > <br><br>
+          citric acid :           <input type="number" step="0.0001", name='3', > <br><br>
+          residual sugar :        <input type="number" step="0.0001", name='4', > <br><br>
+          chlorides :             <input type="number" step="0.0001", name='5', > <br><br>
+          free sulfur dioxide :   <input type="number" step="0.0001", name='6', > <br><br>
+          total sulfur dioxide :  <input type="number" step="0.0001", name='7', > <br><br>
+          density :               <input type="number" step="0.0001", name='8', > <br><br>
+          pH :                    <input type="number" step="0.0001", name='9', > <br><br>
+          sulphates :             <input type="number" step="0.0001", name='10', > <br><br>
+          alcohol :               <input type="number" step="0.0001", name='11', > <br><br><br></b>
           <input type="submit" , value='predict the wine quality!' >
       </form>
 

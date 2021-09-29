@@ -27,7 +27,8 @@ def home():
     data10 = request.form['10']
     data11 = request.form['11']
 
-    X = np.array([[data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11]])
+    X = np.array([[data1, data2, data3, data4, data5, data6, 
+                   data7, data8, data9, data10, data11]])
     pred = model.predict(X)
     return render_template('prediction.html', data=pred)
 
